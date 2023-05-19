@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.freefair.lombok' version '5.3.0'
 }
 
 group 'ru.netology'
@@ -20,15 +21,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:6.12.2'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'io.rest-assured:rest-assured:4.3.3'
-    testImplementation 'com.google.code.gson:gson:2.8.6'
 
-    implementation 'org.projectlombok:lombok:1.18.24'
-
-    compileOnly 'org.projectlombok:lombok:1.18.24'
-    annotationProcessor 'org.projectlombok:lombok:1.18.20'
-
-    testCompileOnly 'org.projectlombok:lombok:1.18.24'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
 }
 
 test {
